@@ -14,7 +14,7 @@ app.use(express.json());
 
 const subscribersRouter = require('./routes/subscribers');
 
-app.use('subscribers');
+app.use('subscribers', subscribersRouter);
 
 app.get('/', (req, res) => {
   res.send("We are on the home page");
