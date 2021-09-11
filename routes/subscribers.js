@@ -3,12 +3,12 @@ const router = express.Router();
 
 // get all
 router.get('/', (req, res) => {
-
+  res.send("Hello world");
 });
 
 // get one
 router.get('/:id', (req, res) => {
-  req.params.id
+  res.send(req.params.id);
 });
 
 // create one
